@@ -112,13 +112,14 @@ section:nth-child(4) {
   background: #3CD3B6;
 }
 section:nth-child(5) {
-  background: #9B59B6;
+  background: #8E84D0;
 }
 section:nth-child(6) {
   background: #20335C;
 }
 section:nth-child(7) {
-  background: #ffcc00;
+  background: #FEDB7C;
+  overflow: hidden;
 }
 
 .nav__wrapper {
@@ -537,4 +538,406 @@ xtype
   width: 30%;
   left: 35%;
   top: 40%;
+}
+
+/*Gallery */
+
+.gallery {
+  width: 100%;
+  height: auto;
+  padding-left: 350px;
+}
+
+.gallery li {
+  width: 25%;
+  position: relative;
+  float: left;
+  overflow: hidden;
+}
+
+.transform {
+  -webkit-transition: all .25s cubic-bezier(.2, .31, .36, 1);
+       -moz-transition: all .25s cubic-bezier(.2, .31, .36, 1);
+       -o-transition: all .25s cubic-bezier(.2, .31, .36, 1);
+          transition: all .25s cubic-bezier(.2, .31, .36, 1);
+}
+
+.gallery a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.gallery img {
+  position: relative;
+    width: auto\9;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+.gallery .info {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 10;
+  background: #00CCE6;
+    text-align: center;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+}
+
+.gallery .title {
+  font-weight: bold;
+  font-size: 20px;
+    color: rgb(43, 43, 43);
+    position: relative;
+    top: 45%;
+}
+
+/* Portfolio Animation */
+
+
+.szene {
+
+}
+
+.stage {
+  position: relative;
+  width: 560px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+/***************************************
+ * All Devices
+ */
+.device {
+  position: absolute;
+}
+
+.notebook {
+  bottom: -30px;
+  left: 0;
+}
+
+.ipad {
+  bottom: -50px;
+  left: 350px;
+}
+
+.iphone {
+  bottom: -60px;
+  left: 500px;
+}
+
+.screen {
+  position: relative;
+  margin: 13px auto 0;
+  border-radius: 2px;
+  background: #555;
+  overflow: hidden;
+}
+
+.shadow {
+  position: absolute;
+  z-index: -1;
+  bottom: -4px;
+  left: -4%;
+  width: 108%;
+  height: 8px;
+  border-radius: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/***************************************
+ * Notebook
+ */
+.notebook {
+  width: 300px;
+  height: 185px;
+  border-radius: 10px 10px 0 0;
+  background: #fafafa;
+}
+
+.notebook:before {
+  top: 5px;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  margin-left: -2px;
+  border-radius: 50%;
+  background: #aaa;
+}
+
+.notebook .screen {
+  width: 275px;
+  height: 160px;
+}
+
+.notebook .keyboard {
+  position: absolute;
+  top: 100%;
+  margin-left: -25px;
+  width: 350px;
+  height: 8px;
+  border-radius: 5px 5px 25px 25px;
+  background: #eaeaea;
+}
+
+.notebook .keyboard:after {
+  left: 50%;
+  margin-left: -25px;
+  width: 50px;
+  height: 4px;
+  border-radius: 0 0 8px 8px;
+  background: #ccc;
+}
+
+/***************************************
+ * Tablet
+ */
+.ipad {
+  width: 110px;
+  height: 150px;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+.ipad:before {
+  top: 5px;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  margin-left: -2px;
+  border-radius: 50%;
+  background: #aaa;
+}
+
+.ipad:after {
+  bottom: 5px;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  margin-left: -2px;
+  border: 1px solid #aaa;
+  border-radius: 50%;
+}
+
+.ipad .screen {
+  width: 100px;
+  height: 125px;
+}
+
+/***************************************
+ * Smartphone
+ */
+.iphone {
+  width: 60px;
+  height: 110px;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+.iphone:before {
+  top: 6px;
+  left: 50%;
+  width: 10px;
+  height: 2px;
+  margin-left: -5px;
+  border-radius: 4px;
+  background: #aaa;
+}
+
+.iphone:after {
+  bottom: 5px;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  margin-left: -2px;
+  border: 1px solid #aaa;
+  border-radius: 50%;
+}
+
+.iphone .screen {
+  width: 52px;
+  height: 85px;
+}
+
+/***************************************
+ * Animation
+ */
+.animation {
+  width: 100%;
+  height: 100%;
+  border-radius: 2px;
+  background: #bcd;
+  -webkit-transform: scale(0.4, 0.4) translateX(500%);
+          transform: scale(0.4, 0.4) translateX(500%);
+  -webkit-animation: 7s fly-in infinite;
+          animation: 7s fly-in infinite;
+  overflow: hidden;
+}
+
+@-webkit-keyframes fly-in {
+  0% {
+    -webkit-transform: scale(0.4, 0.4) translateX(500%);
+            transform: scale(0.4, 0.4) translateX(500%);
+  }
+  10% {
+    -webkit-transform: scale(0.4, 0.4) translateX(0);
+            transform: scale(0.4, 0.4) translateX(0);
+  }
+  20% {
+    -webkit-transform: scale(1, 1) translateX(0);
+            transform: scale(1, 1) translateX(0);
+  }
+  80% {
+    -webkit-transform: scale(1, 1) translateX(0);
+            transform: scale(1, 1) translateX(0);
+  }
+  90% {
+    -webkit-transform: scale(0.4, 0.4) translateX(0);
+            transform: scale(0.4, 0.4) translateX(0);
+  }
+  100% {
+    -webkit-transform: scale(0.4, 0.4) translateX(-500%);
+            transform: scale(0.4, 0.4) translateX(-500%);
+  }
+}
+
+@keyframes fly-in {
+  0% {
+    -webkit-transform: scale(0.4, 0.4) translateX(500%);
+            transform: scale(0.4, 0.4) translateX(500%);
+  }
+  10% {
+    -webkit-transform: scale(0.4, 0.4) translateX(0);
+            transform: scale(0.4, 0.4) translateX(0);
+  }
+  20% {
+    -webkit-transform: scale(1, 1) translateX(0);
+            transform: scale(1, 1) translateX(0);
+  }
+  80% {
+    -webkit-transform: scale(1, 1) translateX(0);
+            transform: scale(1, 1) translateX(0);
+  }
+  90% {
+    -webkit-transform: scale(0.4, 0.4) translateX(0);
+            transform: scale(0.4, 0.4) translateX(0);
+  }
+  100% {
+    -webkit-transform: scale(0.4, 0.4) translateX(-500%);
+            transform: scale(0.4, 0.4) translateX(-500%);
+  }
+}
+.browser {
+  height: 15px;
+  background: #88a6c4;
+}
+.browser:before {
+  top: 5px;
+  left: 5px;
+  width: 5px;
+  height: 5px;
+  border-radius: 2px;
+  background: #bcd;
+}
+.browser:after {
+  top: 5px;
+  right: 5px;
+  height: 5px;
+  width: calc(100% - 20px);
+  border-radius: 2px;
+  background: #bcd;
+}
+
+.content {
+  position: relative;
+  width: 80%;
+  height: 4px;
+  margin: 10% 0 0 10%;
+  background: #88a6c4;
+  box-shadow: 0 8px 0 #88a6c4, 0 16px 0 #88a6c4, 0 24px 0 #88a6c4, 0 32px 0 #88a6c4, 0 40px 0 #88a6c4, 0 48px 0 #88a6c4;
+  -webkit-animation: 7s pop-in infinite;
+          animation: 7s pop-in infinite;
+}
+.content:after {
+  top: 48px;
+  left: 50%;
+  width: 50%;
+  height: 4px;
+  background: #bcd;
+}
+
+.notebook .content:before {
+  width: 32px;
+  height: 28px;
+  border-right: 4px solid #bcd;
+  background: #88a6c4;
+}
+
+.ipad .content:before {
+  width: 24px;
+  height: 20px;
+  border-right: 4px solid #bcd;
+  background: #88a6c4;
+}
+
+@-webkit-keyframes pop-in {
+  0% {
+    -webkit-transform: translateY(3000%);
+            transform: translateY(3000%);
+  }
+  18% {
+    -webkit-transform: translateY(3000%);
+            transform: translateY(3000%);
+  }
+  28% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes pop-in {
+  0% {
+    -webkit-transform: translateY(3000%);
+            transform: translateY(3000%);
+  }
+  18% {
+    -webkit-transform: translateY(3000%);
+            transform: translateY(3000%);
+  }
+  28% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+/***************************************
+ * Codepen Preview
+ */
+@media only screen and (height: 300px) {
+  .szene {
+    height: 200px;
+  }
+
+  .stage {
+    width: 100%;
+    -webkit-transform: scale(0.8, 0.8);
+            transform: scale(0.8, 0.8);
+  }
 }
