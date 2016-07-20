@@ -115,7 +115,7 @@ section:nth-child(5) {
   background: #9B59B6;
 }
 section:nth-child(6) {
-  background: #03C9A9;
+  background: #20335C;
 }
 section:nth-child(7) {
   background: #ffcc00;
@@ -510,4 +510,31 @@ xtype
 .aqua {
   stroke: #8E84D0;
    fill:none;
+}
+
+/* Future */
+#particles-js{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  /*background: #111111;*/
+}
+
+.a {
+  fill:#fff;
+}
+
+.b {
+  fill:#007bb6;
+}
+
+.c {
+  fill:#fff;
+}
+
+.linkedinLogo {
+  position: absolute;
+  width: 30%;
+  left: 35%;
+  top: 40%;
 }
